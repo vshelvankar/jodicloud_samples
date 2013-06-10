@@ -8,3 +8,10 @@ Samples
 3>   Exception mapper for Jesrsy Response building in case of exception
 
 4>   HateOas annotation support to build response 
+
+
+
+
+
+
+thanks to the support from viany in adding the features while building the project
