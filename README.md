@@ -14,4 +14,4 @@ Samples
 
 
 
-Acknowledge : thanks to the support from Viany in adding the features while building the project
+Acknowledgements  : thanks to the support from Viany in adding the features while building the project
