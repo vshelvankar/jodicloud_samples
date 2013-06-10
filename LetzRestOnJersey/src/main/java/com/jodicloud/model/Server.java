@@ -14,6 +14,18 @@ public class Server {
 	
 	private String startTime;
 
+	private Links links;
+	
+	
+	
+	public Links getLinks() {
+		return links;
+	}
+
+	public void setLinks(Links links) {
+		this.links = links;
+	}
+
 	public String getServerID() {
 		return ServerID;
 	}

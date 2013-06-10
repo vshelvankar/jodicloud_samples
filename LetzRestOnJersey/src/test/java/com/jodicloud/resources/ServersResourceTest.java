@@ -79,19 +79,14 @@ public class ServersResourceTest extends JerseyTest {
 
 		webResource = resource().path("servers");
 		JSONObject payLoad = new JSONObject();
-		payLoad.put("serverName", "TestServer");
+		payLoad.put("serverName", "Test");
 		ClientResponse response = webResource.entity(payLoad)
 				.type(MediaType.APPLICATION_JSON).post(ClientResponse.class);
+		System.out.println("Post request Test!");
 		System.out.println(response);
-		assertNotNull(response );
-		JSONObject serverresponse =(JSONObject)response.getEntity(JSONObject.class);
-		System.out.println(serverresponse.get("payLoad"));
-		JSONObject pay= (JSONObject) serverresponse.get("payLoad");
-		String serverName = pay.get("serverName").toString();
-		assertEquals("TestServer", serverName);
-		assertNotNull(serverresponse);
-		//assertTrue(response.getEntity(String.class).contains("TestServer"));
-		assertEquals(201,response.getStatus());
+		System.out.println(response.getEntity(String.class));
+		assertTrue(response != null);
+		assertEquals(response.getStatus(), 201);
 
 	}
 
